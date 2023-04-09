@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "optima";
+  src: url(/FONT/OptimaModoki.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "optima";
+  background-color: #fff;
+  color: #013a72;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+.unordered {
+  display: none;
+}
+.social-footer-two {
+  display: none;
+}
+.header-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 600;
+}
+.bi-list {
+  width: 30px;
+  height: 30px;
+}
+.main-content {
+  width: 100%;
+  padding: 30px 50px;
+  text-align: center;
+  background-color: #f7f8f9;
+  font-size: 15px;
+}
+.first-p {
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  word-spacing: 4px;
+}
+.second-p {
+  opacity: 0.9;
+  margin-bottom: 50px;
+}
+.image {
+  width: 100%;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.social-footer {
+  font-size: 0;
+  margin-top: 20px;
+}
+.social-icon {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-footer a {
+  background: rgba(1, 43, 85, 0.1);
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  border-radius: 15px;
+}
+.social-footer svg {
+  fill: #012b55;
+  height: 22px;
+  width: 22px;
+}
+.social-footer li svg {
+  vertical-align: middle;
+}
+.site-footer,
+.site-footer a {
+  color: #597188;
+}
+.social-footer a {
+  display: block;
+}
+.footer-text {
+  font-size: 15px;
+  margin: 20px 0;
+}
+.footer-text a {
+  text-decoration: none;
+  color: #012b55;
+}
+
+@media (min-width: 600px) {
+  .pictures {
+    display: flex;
+    gap: 3px;
+  }
+  .image {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .aside {
+    width: 25%;
+    padding: 10px;
+  }
+  .unordered {
+    display: block;
+    list-style: none;
+  }
+  .unordered li {
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+  }
+  .header-title {
+    justify-content: center;
+  }
+  .main {
+    width: 75%;
+  }
+  .main-content {
+    font-size: 1.5rem;
+  }
+  .first-p {
+    margin-top: 70px;
+    padding: 0 70px;
+    line-height: 40px;
+  }
+  .second-p {
+    font-size: 1rem;
+  }
+  .social-footer-two {
+    margin-left: -62px;
+    display: block;
+  }
+}
